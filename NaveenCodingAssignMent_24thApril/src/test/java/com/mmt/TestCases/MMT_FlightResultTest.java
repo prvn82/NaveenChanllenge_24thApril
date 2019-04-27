@@ -1,6 +1,7 @@
 package com.mmt.TestCases;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -26,16 +27,20 @@ public class MMT_FlightResultTest extends BaseClass {
 	@Test(priority=1)
 	public void ValidateNumberOfFlighstWithoutFilters() {
 		System.out.println("*********** No of flights after without any filters***************");
+		Reporter.log("*********** No of flights after without any filters***************");
 		MMT_Util.ScrollDownComplete();
 		
 		results.numberOfDepartureFlight();
 		results.numberOfArrivalFlight();
+		
+		
 	}
 	
 	
 	@Test(priority=2)
 	public void ValidateNumberofFlightWith_NonStop() {
-		System.out.println("*********** No of flights after One STOP filter applied...****************");
+		System.out.println("***********No of flights after One STOP filter applied****************");
+		Reporter.log("***********No of flights after One STOP filter applied***************");
 		MMT_Util.ScrollUPComplete();
 		results.StopsFlights("non stops");
 		MMT_Util.ScrollDownComplete();
@@ -46,7 +51,8 @@ public class MMT_FlightResultTest extends BaseClass {
 	
 	@Test(priority=3)
 	public void ValidateNumberofFlightWith_OneStop() {
-		System.out.println("*********** No of flights after One STOP filter applied...****************");
+		System.out.println("*********** No of flights after One STOP filter applied***************");
+		Reporter.log("***********No of flights after One STOP filter applied****************");
 		MMT_Util.ScrollUPComplete();
 		results.StopsFlights("one stop");
 		MMT_Util.ScrollDownComplete();
@@ -61,13 +67,26 @@ public class MMT_FlightResultTest extends BaseClass {
 	@Test(priority=4,dataProvider="getdata",dataProviderClass=DataProviderClass.class)
 	public void SelectFlightAndValidateTotal(int depaInx, int ArrivalIdx) {
 		
-		results.numberOfDepartureFlight();
 		results.SelectDepartureFlight(depaInx);
 		results.SelectDArrivalFlight(ArrivalIdx);
 		System.out.println("Selected Arrival flight Name: "+results.getArrival_Flightname());
 		System.out.println("Selected Arrival flight Price: "+results.getArrival_FlightPrice());
 		System.out.println("Selected Departure flight Name: "+results.getDepart_Flightname());
 		System.out.println("Selected departure flight Price: "+results.getDepart_FlightPrice());
+		
+		Reporter.log("Selected Arrival flight Name: "+results.getArrival_Flightname());
+		Reporter.log("Selected Arrival flight Name: "+results.getArrival_FlightPrice());
+		Reporter.log("Selected Arrival flight Name: "+results.getDepart_Flightname());
+		Reporter.log("Selected Arrival flight Name: "+results.getDepart_FlightPrice());
+		
+		
+		test.get().info("Selected Arrival flight Name: "+results.getArrival_Flightname());
+		test.get().info("Selected Arrival flight Name: "+results.getArrival_FlightPrice());
+		test.get().info("Selected Arrival flight Name: "+results.getDepart_Flightname());
+		test.get().info("Selected Arrival flight Name: "+results.getDepart_FlightPrice());
+		
+		
+
 		Validate_SelectedFlightDetails();
 		ValidateTotalFare();
 		

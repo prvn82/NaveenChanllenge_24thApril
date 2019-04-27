@@ -53,9 +53,10 @@ public class MMT_HomePage extends BaseClass {
 	}
 
 	public void ValidateTiltle() {
-
+        Reporter.log("validating Page title...");
 		Assert.assertEquals(driver.getTitle(),
 				"MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights &amp; Holiday");
+		test.get().info("validated Page title...");
 	}
 
 	// Method to Click MMT_Menu
@@ -63,6 +64,8 @@ public class MMT_HomePage extends BaseClass {
 		for (WebElement e : MMT_Menu) {
 			if (e.getText().contains(menu)) {
 				e.click();
+				Reporter.log("Clicked on Menu "+ menu);
+				test.get().info("Clicked on Menu "+ menu);
 				break;
 			}
 		}
@@ -72,29 +75,40 @@ public class MMT_HomePage extends BaseClass {
 	public void TripWay(String way) {
 		if (way.equalsIgnoreCase("two")) {
 			RoundTrip.click();
+			Reporter.log("Select on Stopway filter "+ way);
+			test.get().info("Select on Stopway filter "+ way);
 		} else if (way.equalsIgnoreCase("one")) {
 			OneWayTrip.click();
+			Reporter.log("select on Stopway filter "+ way);
+			test.get().info("Select on Stopway filter "+ way);
 		} else {
 			MutiCity.click();
+			Reporter.log("select on Stopway filter "+ way);
+			test.get().info("Select on Stopway filter "+ way);
 		}
 	}
 
 	// Method to enter Cities for Search
-	// Added xpath of suggestion window Directly here as this is Dyamnic in nature
-	// and appear once we Enter city.
+	
 	public boolean EnterFromCity(String FromCityName) throws InterruptedException {
 
 		boolean flag = false;
 
 		From_City.sendKeys(FromCityName, Keys.ENTER);
-
+		Reporter.log("Enter Depature City "+ FromCityName);
+		test.get().info("Enter Depature City "+ FromCityName);
+		
 		MMT_Util.Explicitwait(10, CitySuggestion);
+		Reporter.log("waiting to populate Auto Suggestion after entering City..");
+		test.get().info("waiting to populate Auto Suggestion after entering City..");
 
 		for (WebElement e : Suggestion) {
 
 
 			if (e.getText().toUpperCase().contains(FromCityName.toUpperCase())) {
 				e.click();
+				Reporter.log("selected city...");
+				test.get().info("selected city...");
 				flag = true;
 				break;
 			}
@@ -109,13 +123,19 @@ public class MMT_HomePage extends BaseClass {
 		boolean flag = false;
 		To_City.sendKeys(Keys.TAB);
 		To_City.sendKeys(ToCityName, Keys.ENTER);
+		Reporter.log("Enter Arrival City "+ ToCityName);
+		test.get().info("Enter Arrival City "+ ToCityName);
 
 		Thread.sleep(6000);
+		Reporter.log("waiting to populate Auto Suggestion after entering City..");
+		test.get().info("waiting to populate Auto Suggestion after entering City..");
 
 		for (WebElement e : Suggestion) {
 
 			if (e.getText().toUpperCase().contains(ToCityName.toUpperCase())) {
 				e.click();
+				Reporter.log("selected city...");
+				test.get().info("selected city...");
 				flag = true;
 				break;
 			}
@@ -155,7 +175,7 @@ public class MMT_HomePage extends BaseClass {
 			
 			Cal.click();
 
-			Reporter.log("Clicking on date " + DepartureDate.toString());
+			Reporter.log("Clicking on date " + Day1+"/"+Month1+"/"+Year1);
 			WebElement DepDate = driver.findElement(By.xpath(DepartureDateXpath));
 			if (DepDate.isDisplayed()) {
 				MMT_Util.JavaScriptClick(DepDate);
@@ -176,7 +196,7 @@ public class MMT_HomePage extends BaseClass {
 
 			
 			
-			Reporter.log("Clicking on date " + ArrivateDate.toString());
+			Reporter.log("Clicking on date " + Day2+"/"+Month2+"/"+Year2);
 			WebElement ArrivalDate = driver.findElement(By.xpath(ArrivalDateXpath));
 			
 			if (ArrivalDate.isDisplayed()) {
@@ -197,6 +217,7 @@ public class MMT_HomePage extends BaseClass {
 	public MMT_FlightResult ClickSearchButton() {
 
 		search.click();
+		Reporter.log("Clicked on Search button after entering all details");
 		return new MMT_FlightResult();
 		
 

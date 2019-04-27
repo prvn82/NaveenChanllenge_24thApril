@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="13" passed="13">
+<testng-results skipped="5" failed="0" total="13" passed="8">
   <reporter-output>
     <line>
       <![CDATA[Chrome Opened]]>
@@ -8,38 +8,215 @@
       <![CDATA[https://www.makemytrip.com/ Opened]]>
     </line>
     <line>
-      <![CDATA[Clicking on date Sat Apr 27 15:17:47 IST 2019]]>
+      <![CDATA[validating Page title...]]>
     </line>
     <line>
-      <![CDATA[Clicking on date Sat May 04 15:17:47 IST 2019]]>
+      <![CDATA[Clicked on Menu Flights]]>
+    </line>
+    <line>
+      <![CDATA[Select on Stopway filter two]]>
+    </line>
+    <line>
+      <![CDATA[Enter Depature City Delhi]]>
+    </line>
+    <line>
+      <![CDATA[waiting to populate Auto Suggestion after entering City..]]>
+    </line>
+    <line>
+      <![CDATA[selected city...]]>
+    </line>
+    <line>
+      <![CDATA[Enter Depature City [[ChromeDriver: chrome on MAC (e5d92bbd3817fed852cbdd5d96692c7f)] -> xpath: //input[@id='toCity']]]]>
+    </line>
+    <line>
+      <![CDATA[waiting to populate Auto Suggestion after entering City..]]>
+    </line>
+    <line>
+      <![CDATA[selected city...]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on date 27/April/2019]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on date 4/May/2019]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Search button after entering all details]]>
+    </line>
+    <line>
+      <![CDATA[*********** No of flights after without any filters***************]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling down to load complete Page content..]]>
+    </line>
+    <line>
+      <![CDATA[Total number of departure flights 4]]>
+    </line>
+    <line>
+      <![CDATA[Total number of departure flights 74]]>
+    </line>
+    <line>
+      <![CDATA[***********No of flights after One STOP filter applied***************]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling up to view element from start..]]>
+    </line>
+    <line>
+      <![CDATA[Clearing applied filters..]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on filter non stops]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling down to load complete Page content..]]>
+    </line>
+    <line>
+      <![CDATA[Total number of departure flights 1]]>
+    </line>
+    <line>
+      <![CDATA[Total number of departure flights 37]]>
+    </line>
+    <line>
+      <![CDATA[***********No of flights after One STOP filter applied****************]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling up to view element from start..]]>
+    </line>
+    <line>
+      <![CDATA[Clearing applied filters..]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on filter one stop]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling down to load complete Page content..]]>
+    </line>
+    <line>
+      <![CDATA[Total number of departure flights 3]]>
+    </line>
+    <line>
+      <![CDATA[Total number of departure flights 28]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling up to view element from start..]]>
+    </line>
+    <line>
+      <![CDATA[Clearing applied filters..]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling down to load complete Page content..]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling up to view element from start..]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Flight number 3]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Flight number 4]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: IndiGo |6E - 2289]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: Rs 7,681]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: Air India |AI - 24Air India |AI - 603]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: Rs 16,720]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Flight number 1]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Flight number 9]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: IndiGo |6E - 2135]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: Rs 8,119]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: IndiGo |6E - 2977]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: Rs 10,124]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Flight number 2]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Flight number 3]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: AirAsia |I5 - 722]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: Rs 7,432]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: Air India |AI - 624Air India |AI - 603]]>
+    </line>
+    <line>
+      <![CDATA[Selected Arrival flight Name: Rs 16,720]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="153962" started-at="2019-04-27T09:47:33Z" finished-at="2019-04-27T09:50:07Z">
+  <suite name="Suite" duration-ms="126197" started-at="2019-04-27T13:50:11Z" finished-at="2019-04-27T13:52:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="153962" started-at="2019-04-27T09:47:33Z" finished-at="2019-04-27T09:50:07Z">
+    <test name="NaveenAutomation_24thApril" duration-ms="126197" started-at="2019-04-27T13:50:11Z" finished-at="2019-04-27T13:52:18Z">
       <class name="com.mmt.TestCases.MMT_HomePageTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@68c4039c]" name="init" is-config="true" duration-ms="23" started-at="2019-04-27T15:17:38Z" finished-at="2019-04-27T15:17:38Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@6dde5c8c]" name="init" is-config="true" duration-ms="28" started-at="2019-04-27T19:20:20Z" finished-at="2019-04-27T19:20:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="ValidateHomePage()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@68c4039c]" name="ValidateHomePage" duration-ms="12" started-at="2019-04-27T15:17:38Z" finished-at="2019-04-27T15:17:38Z">
+        <test-method status="PASS" signature="ValidateHomePage()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@6dde5c8c]" name="ValidateHomePage" duration-ms="25" started-at="2019-04-27T19:20:20Z" finished-at="2019-04-27T19:20:20Z">
           <reporter-output>
+            <line>
+              <![CDATA[validating Page title...]]>
+            </line>
           </reporter-output>
         </test-method> <!-- ValidateHomePage -->
-        <test-method status="PASS" signature="SearchFlight()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@68c4039c]" name="SearchFlight" duration-ms="9713" started-at="2019-04-27T15:17:38Z" finished-at="2019-04-27T15:17:48Z">
+        <test-method status="PASS" signature="SearchFlight()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@6dde5c8c]" name="SearchFlight" duration-ms="9844" started-at="2019-04-27T19:20:20Z" finished-at="2019-04-27T19:20:30Z">
           <reporter-output>
             <line>
-              <![CDATA[Clicking on date Sat Apr 27 15:17:47 IST 2019]]>
+              <![CDATA[Clicked on Menu Flights]]>
             </line>
             <line>
-              <![CDATA[Clicking on date Sat May 04 15:17:47 IST 2019]]>
+              <![CDATA[Select on Stopway filter two]]>
+            </line>
+            <line>
+              <![CDATA[Enter Depature City Delhi]]>
+            </line>
+            <line>
+              <![CDATA[waiting to populate Auto Suggestion after entering City..]]>
+            </line>
+            <line>
+              <![CDATA[selected city...]]>
+            </line>
+            <line>
+              <![CDATA[Enter Depature City [[ChromeDriver: chrome on MAC (e5d92bbd3817fed852cbdd5d96692c7f)] -> xpath: //input[@id='toCity']]]]>
+            </line>
+            <line>
+              <![CDATA[waiting to populate Auto Suggestion after entering City..]]>
+            </line>
+            <line>
+              <![CDATA[selected city...]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on date 27/April/2019]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on date 4/May/2019]]>
             </line>
           </reporter-output>
         </test-method> <!-- SearchFlight -->
       </class> <!-- com.mmt.TestCases.MMT_HomePageTests -->
       <class name="com.mmt.TestCases.MMT_FlightResultTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="Setup" is-config="true" duration-ms="5415" started-at="2019-04-27T15:17:33Z" finished-at="2019-04-27T15:17:38Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="Setup" is-config="true" duration-ms="8656" started-at="2019-04-27T19:20:11Z" finished-at="2019-04-27T19:20:20Z">
           <reporter-output>
             <line>
               <![CDATA[Chrome Opened]]>
@@ -49,23 +226,92 @@
             </line>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="init" is-config="true" duration-ms="2464" started-at="2019-04-27T15:17:48Z" finished-at="2019-04-27T15:17:50Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="init" is-config="true" duration-ms="2079" started-at="2019-04-27T19:20:30Z" finished-at="2019-04-27T19:20:32Z">
           <reporter-output>
+            <line>
+              <![CDATA[Clicked on Search button after entering all details]]>
+            </line>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="ValidateNumberOfFlighstWithoutFilters()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="ValidateNumberOfFlighstWithoutFilters" duration-ms="10465" started-at="2019-04-27T15:17:50Z" finished-at="2019-04-27T15:18:01Z">
+        <test-method status="PASS" signature="ValidateNumberOfFlighstWithoutFilters()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="ValidateNumberOfFlighstWithoutFilters" duration-ms="10547" started-at="2019-04-27T19:20:32Z" finished-at="2019-04-27T19:20:43Z">
           <reporter-output>
+            <line>
+              <![CDATA[*********** No of flights after without any filters***************]]>
+            </line>
+            <line>
+              <![CDATA[Scrolling down to load complete Page content..]]>
+            </line>
+            <line>
+              <![CDATA[Total number of departure flights 4]]>
+            </line>
+            <line>
+              <![CDATA[Total number of departure flights 74]]>
+            </line>
           </reporter-output>
         </test-method> <!-- ValidateNumberOfFlighstWithoutFilters -->
-        <test-method status="PASS" signature="ValidateNumberofFlightWith_NonStop()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="ValidateNumberofFlightWith_NonStop" duration-ms="20627" started-at="2019-04-27T15:18:01Z" finished-at="2019-04-27T15:18:21Z">
+        <test-method status="PASS" signature="ValidateNumberofFlightWith_NonStop()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="ValidateNumberofFlightWith_NonStop" duration-ms="20664" started-at="2019-04-27T19:20:43Z" finished-at="2019-04-27T19:21:03Z">
           <reporter-output>
+            <line>
+              <![CDATA[***********No of flights after One STOP filter applied***************]]>
+            </line>
+            <line>
+              <![CDATA[Scrolling up to view element from start..]]>
+            </line>
+            <line>
+              <![CDATA[Clearing applied filters..]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on filter non stops]]>
+            </line>
+            <line>
+              <![CDATA[Scrolling down to load complete Page content..]]>
+            </line>
+            <line>
+              <![CDATA[Total number of departure flights 1]]>
+            </line>
+            <line>
+              <![CDATA[Total number of departure flights 37]]>
+            </line>
           </reporter-output>
         </test-method> <!-- ValidateNumberofFlightWith_NonStop -->
-        <test-method status="PASS" signature="ValidateNumberofFlightWith_OneStop()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="ValidateNumberofFlightWith_OneStop" duration-ms="51367" started-at="2019-04-27T15:18:21Z" finished-at="2019-04-27T15:19:13Z">
+        <test-method status="PASS" signature="ValidateNumberofFlightWith_OneStop()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="ValidateNumberofFlightWith_OneStop" duration-ms="52523" started-at="2019-04-27T19:21:03Z" finished-at="2019-04-27T19:21:56Z">
           <reporter-output>
+            <line>
+              <![CDATA[***********No of flights after One STOP filter applied****************]]>
+            </line>
+            <line>
+              <![CDATA[Scrolling up to view element from start..]]>
+            </line>
+            <line>
+              <![CDATA[Clearing applied filters..]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on filter one stop]]>
+            </line>
+            <line>
+              <![CDATA[Scrolling down to load complete Page content..]]>
+            </line>
+            <line>
+              <![CDATA[Total number of departure flights 3]]>
+            </line>
+            <line>
+              <![CDATA[Total number of departure flights 28]]>
+            </line>
+            <line>
+              <![CDATA[Scrolling up to view element from start..]]>
+            </line>
+            <line>
+              <![CDATA[Clearing applied filters..]]>
+            </line>
+            <line>
+              <![CDATA[Scrolling down to load complete Page content..]]>
+            </line>
+            <line>
+              <![CDATA[Scrolling up to view element from start..]]>
+            </line>
           </reporter-output>
         </test-method> <!-- ValidateNumberofFlightWith_OneStop -->
-        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10509" started-at="2019-04-27T15:19:13Z" data-provider="getdata" finished-at="2019-04-27T15:19:23Z">
+        <test-method status="SKIP" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="SelectFlightAndValidateTotal" duration-ms="19" started-at="2019-04-27T19:21:56Z" data-provider="getdata" finished-at="2019-04-27T19:21:56Z">
           <params>
             <param index="0">
               <value>
@@ -78,10 +324,45 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Given 10 Index number is more than number of departure flight listed or Negative value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Given 10 Index number is more than number of departure flight listed or Negative value
+	at com.mmt.Pages.MMT_FlightResult.SelectDepartureFlight(MMT_FlightResult.java:140)
+	at com.mmt.TestCases.MMT_FlightResultTest.SelectFlightAndValidateTotal(MMT_FlightResultTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectFlightAndValidateTotal -->
-        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10440" started-at="2019-04-27T15:19:23Z" data-provider="getdata" finished-at="2019-04-27T15:19:34Z">
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="SelectFlightAndValidateTotal" duration-ms="10536" started-at="2019-04-27T19:21:56Z" data-provider="getdata" finished-at="2019-04-27T19:22:06Z">
           <params>
             <param index="0">
               <value>
@@ -95,9 +376,27 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Clicked on Flight number 3]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Flight number 4]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: IndiGo |6E - 2289]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: Rs 7,681]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: Air India |AI - 24Air India |AI - 603]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: Rs 16,720]]>
+            </line>
           </reporter-output>
         </test-method> <!-- SelectFlightAndValidateTotal -->
-        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10450" started-at="2019-04-27T15:19:34Z" data-provider="getdata" finished-at="2019-04-27T15:19:44Z">
+        <test-method status="SKIP" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="SelectFlightAndValidateTotal" duration-ms="12" started-at="2019-04-27T19:22:06Z" data-provider="getdata" finished-at="2019-04-27T19:22:06Z">
           <params>
             <param index="0">
               <value>
@@ -110,10 +409,45 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Given 5 Index number is more than number of departure flight listed or Negative value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Given 5 Index number is more than number of departure flight listed or Negative value
+	at com.mmt.Pages.MMT_FlightResult.SelectDepartureFlight(MMT_FlightResult.java:140)
+	at com.mmt.TestCases.MMT_FlightResultTest.SelectFlightAndValidateTotal(MMT_FlightResultTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectFlightAndValidateTotal -->
-        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="457" started-at="2019-04-27T15:19:44Z" data-provider="getdata" finished-at="2019-04-27T15:19:45Z">
+        <test-method status="SKIP" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="SelectFlightAndValidateTotal" duration-ms="14" started-at="2019-04-27T19:22:06Z" data-provider="getdata" finished-at="2019-04-27T19:22:06Z">
           <params>
             <param index="0">
               <value>
@@ -126,10 +460,45 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Given 8 Index number is more than number of departure flight listed or Negative value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Given 8 Index number is more than number of departure flight listed or Negative value
+	at com.mmt.Pages.MMT_FlightResult.SelectDepartureFlight(MMT_FlightResult.java:140)
+	at com.mmt.TestCases.MMT_FlightResultTest.SelectFlightAndValidateTotal(MMT_FlightResultTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectFlightAndValidateTotal -->
-        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="451" started-at="2019-04-27T15:19:45Z" data-provider="getdata" finished-at="2019-04-27T15:19:45Z">
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="SelectFlightAndValidateTotal" duration-ms="441" started-at="2019-04-27T19:22:06Z" data-provider="getdata" finished-at="2019-04-27T19:22:07Z">
           <params>
             <param index="0">
               <value>
@@ -143,9 +512,27 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Clicked on Flight number 1]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Flight number 9]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: IndiGo |6E - 2135]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: Rs 8,119]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: IndiGo |6E - 2977]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: Rs 10,124]]>
+            </line>
           </reporter-output>
         </test-method> <!-- SelectFlightAndValidateTotal -->
-        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10429" started-at="2019-04-27T15:19:45Z" data-provider="getdata" finished-at="2019-04-27T15:19:56Z">
+        <test-method status="SKIP" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="SelectFlightAndValidateTotal" duration-ms="10" started-at="2019-04-27T19:22:07Z" data-provider="getdata" finished-at="2019-04-27T19:22:07Z">
           <params>
             <param index="0">
               <value>
@@ -158,10 +545,45 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Given 5 Index number is more than number of departure flight listed or Negative value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Given 5 Index number is more than number of departure flight listed or Negative value
+	at com.mmt.Pages.MMT_FlightResult.SelectDepartureFlight(MMT_FlightResult.java:140)
+	at com.mmt.TestCases.MMT_FlightResultTest.SelectFlightAndValidateTotal(MMT_FlightResultTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectFlightAndValidateTotal -->
-        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="424" started-at="2019-04-27T15:19:56Z" data-provider="getdata" finished-at="2019-04-27T15:19:56Z">
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="SelectFlightAndValidateTotal" duration-ms="10415" started-at="2019-04-27T19:22:07Z" data-provider="getdata" finished-at="2019-04-27T19:22:17Z">
           <params>
             <param index="0">
               <value>
@@ -175,9 +597,27 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Clicked on Flight number 2]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Flight number 3]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: AirAsia |I5 - 722]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: Rs 7,432]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: Air India |AI - 624Air India |AI - 603]]>
+            </line>
+            <line>
+              <![CDATA[Selected Arrival flight Name: Rs 16,720]]>
+            </line>
           </reporter-output>
         </test-method> <!-- SelectFlightAndValidateTotal -->
-        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10428" started-at="2019-04-27T15:19:56Z" data-provider="getdata" finished-at="2019-04-27T15:20:06Z">
+        <test-method status="SKIP" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="SelectFlightAndValidateTotal" duration-ms="19" started-at="2019-04-27T19:22:17Z" data-provider="getdata" finished-at="2019-04-27T19:22:17Z">
           <params>
             <param index="0">
               <value>
@@ -190,14 +630,49 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Given 4 Index number is more than number of departure flight listed or Negative value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Given 4 Index number is more than number of departure flight listed or Negative value
+	at com.mmt.Pages.MMT_FlightResult.SelectDepartureFlight(MMT_FlightResult.java:140)
+	at com.mmt.TestCases.MMT_FlightResultTest.SelectFlightAndValidateTotal(MMT_FlightResultTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectFlightAndValidateTotal -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="TearDown" is-config="true" duration-ms="268" started-at="2019-04-27T15:20:06Z" finished-at="2019-04-27T15:20:07Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@319b92f3]" name="TearDown" is-config="true" duration-ms="326" started-at="2019-04-27T19:22:17Z" finished-at="2019-04-27T19:22:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.mmt.TestCases.MMT_FlightResultTest -->
-    </test> <!-- Test -->
+    </test> <!-- NaveenAutomation_24thApril -->
   </suite> <!-- Suite -->
 </testng-results>

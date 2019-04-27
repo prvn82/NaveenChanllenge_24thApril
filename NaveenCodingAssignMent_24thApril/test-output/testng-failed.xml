@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <listeners>
+    <listener class-name="com.mmt.Util.Listners"/>
+  </listeners>
+  <test name="NaveenAutomation_24thApril(failed)">
     <classes>
       <class name="com.mmt.TestCases.MMT_FlightResultTest">
         <methods>
           <include name="TearDown"/>
           <include name="Setup"/>
           <include name="init"/>
-          <include name="SelectFlightAndValidateTotal" invocation-numbers="0 3"/>
+          <include name="SelectFlightAndValidateTotal" invocation-numbers="0 2 3 5 7"/>
         </methods>
       </class> <!-- com.mmt.TestCases.MMT_FlightResultTest -->
       <class name="com.mmt.TestCases.MMT_HomePageTests">
@@ -17,5 +20,5 @@
         </methods>
       </class> <!-- com.mmt.TestCases.MMT_HomePageTests -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- NaveenAutomation_24thApril(failed) -->
 </suite> <!-- Failed suite [Suite] -->

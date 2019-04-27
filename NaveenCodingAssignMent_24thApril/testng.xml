@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
+
+<listeners>
+
+<listener class-name="com.mmt.Util.Listners"></listener>
+
+</listeners>
+
+  <test name="NaveenAutomation_24thApril">
     <classes>
       <class name="com.mmt.TestCases.MMT_HomePageTests"/>
       <class name="com.mmt.TestCases.MMT_FlightResultTest"/>

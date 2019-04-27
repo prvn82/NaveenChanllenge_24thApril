@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 import org.testng.SkipException;
 
 import com.mmt.BaseClass.BaseClass;
@@ -85,27 +86,39 @@ public class MMT_FlightResult extends BaseClass {
 	public void numberOfDepartureFlight() {
 
 		System.out.println("Total number of departure flights " + DepartureFlightList.size());
+		Reporter.log("Total number of departure flights " + DepartureFlightList.size());
+		test.get().info("Total number of departure flights " + DepartureFlightList.size());
 
 	}
 
 	public void numberOfArrivalFlight() {
 
 		System.out.println("Total number of departure flights " + ArrivalFlightList.size());
+		Reporter.log("Total number of departure flights " + ArrivalFlightList.size());
+		test.get().info("Total number of departure flights " + ArrivalFlightList.size());
 
 	}
 
 	public void StopsFlights(String typeOfStops) {
 
-		Stops_Reset.click();
+		//Stops_Reset.click();
+		ClearStopFilter();
 		if (typeOfStops.equalsIgnoreCase("non stops")) {
 			Non_Stop_Option.click();
+			Reporter.log("Clicked on filter "+typeOfStops);
+			test.get().info("Clicked on filter "+typeOfStops);
+			
 		} else {
 			oneStop_option.click();
+			Reporter.log("Clicked on filter "+typeOfStops);
+			test.get().info("Clicked on filter "+typeOfStops);
 		}
 	}
 
 	public void ClearStopFilter() {
+		Reporter.log("Clearing applied filters..");
 		Stops_Reset.click();
+		test.get().info("Clearing applied filters..");
 	}
 
 	public void SelectDepartureFlight(int Flight_Index) {
@@ -116,6 +129,8 @@ public class MMT_FlightResult extends BaseClass {
 					// System.out.println(e.getText());
 					Departure_FetchFlightPirce(e);
 					MMT_Util.JavaScriptClick(e);
+					Reporter.log("Clicked on Flight number "+Flight_Index);
+					test.get().info("Clicked on Flight number "+Flight_Index);
 					break;
 				}
 				count++;
@@ -134,6 +149,8 @@ public class MMT_FlightResult extends BaseClass {
 				if (count == Flight_Index) {
 					Arrival_FetchFlightPirce(e);
 					MMT_Util.JavaScriptClick(e);
+					Reporter.log("Clicked on Flight number "+Flight_Index);
+					test.get().info("Clicked on Flight number "+Flight_Index);
 					break;
 				}
 				count++;
@@ -198,6 +215,7 @@ public class MMT_FlightResult extends BaseClass {
 		}
 		
 		System.out.println("Applied discount is: "+discount+". Amount will be adjust from final fare");
+		test.get().info("Applied discount is: "+discount+". Amount will be adjust from final fare");
 		return discount;
 		
 	}
@@ -207,7 +225,7 @@ public class MMT_FlightResult extends BaseClass {
 		int depatPrice = MMT_Util.ConvertToIntPrice(getDepart_FlightPrice());
 		int ArrivalPrice=MMT_Util.ConvertToIntPrice(getArrival_FlightPrice());
 		int totalFare =depatPrice+ArrivalPrice-Discountapplied();
-		System.out.println(depatPrice+" "+ArrivalPrice+" "+totalFare);
+		test.get().info("total flight cost for selected flights: "+totalFare);
 		if(totalFare==MMT_Util.ConvertToIntPrice(Flight_totalPrice.getText())) {
 			flag=true;
 		}

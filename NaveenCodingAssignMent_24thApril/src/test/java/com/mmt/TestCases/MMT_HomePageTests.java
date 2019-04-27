@@ -39,7 +39,6 @@ public class MMT_HomePageTests extends BaseClass {
 
 		Date date2 = c.getTime();
 		Assert.assertTrue(home.DatePicker(date1,date2));
-		//home.ClickSearchButton();
 	}
 	
 
