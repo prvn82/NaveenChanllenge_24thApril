@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="13" passed="13">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome Opened]]>
+    </line>
+    <line>
+      <![CDATA[https://www.makemytrip.com/ Opened]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on date Sat Apr 27 15:17:47 IST 2019]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on date Sat May 04 15:17:47 IST 2019]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="153962" started-at="2019-04-27T09:47:33Z" finished-at="2019-04-27T09:50:07Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="153962" started-at="2019-04-27T09:47:33Z" finished-at="2019-04-27T09:50:07Z">
+      <class name="com.mmt.TestCases.MMT_HomePageTests">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@68c4039c]" name="init" is-config="true" duration-ms="23" started-at="2019-04-27T15:17:38Z" finished-at="2019-04-27T15:17:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="ValidateHomePage()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@68c4039c]" name="ValidateHomePage" duration-ms="12" started-at="2019-04-27T15:17:38Z" finished-at="2019-04-27T15:17:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateHomePage -->
+        <test-method status="PASS" signature="SearchFlight()[pri:0, instance:com.mmt.TestCases.MMT_HomePageTests@68c4039c]" name="SearchFlight" duration-ms="9713" started-at="2019-04-27T15:17:38Z" finished-at="2019-04-27T15:17:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on date Sat Apr 27 15:17:47 IST 2019]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on date Sat May 04 15:17:47 IST 2019]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SearchFlight -->
+      </class> <!-- com.mmt.TestCases.MMT_HomePageTests -->
+      <class name="com.mmt.TestCases.MMT_FlightResultTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="Setup" is-config="true" duration-ms="5415" started-at="2019-04-27T15:17:33Z" finished-at="2019-04-27T15:17:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome Opened]]>
+            </line>
+            <line>
+              <![CDATA[https://www.makemytrip.com/ Opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="init" is-config="true" duration-ms="2464" started-at="2019-04-27T15:17:48Z" finished-at="2019-04-27T15:17:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="ValidateNumberOfFlighstWithoutFilters()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="ValidateNumberOfFlighstWithoutFilters" duration-ms="10465" started-at="2019-04-27T15:17:50Z" finished-at="2019-04-27T15:18:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateNumberOfFlighstWithoutFilters -->
+        <test-method status="PASS" signature="ValidateNumberofFlightWith_NonStop()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="ValidateNumberofFlightWith_NonStop" duration-ms="20627" started-at="2019-04-27T15:18:01Z" finished-at="2019-04-27T15:18:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateNumberofFlightWith_NonStop -->
+        <test-method status="PASS" signature="ValidateNumberofFlightWith_OneStop()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="ValidateNumberofFlightWith_OneStop" duration-ms="51367" started-at="2019-04-27T15:18:21Z" finished-at="2019-04-27T15:19:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateNumberofFlightWith_OneStop -->
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10509" started-at="2019-04-27T15:19:13Z" data-provider="getdata" finished-at="2019-04-27T15:19:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightAndValidateTotal -->
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10440" started-at="2019-04-27T15:19:23Z" data-provider="getdata" finished-at="2019-04-27T15:19:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightAndValidateTotal -->
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10450" started-at="2019-04-27T15:19:34Z" data-provider="getdata" finished-at="2019-04-27T15:19:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightAndValidateTotal -->
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="457" started-at="2019-04-27T15:19:44Z" data-provider="getdata" finished-at="2019-04-27T15:19:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightAndValidateTotal -->
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="451" started-at="2019-04-27T15:19:45Z" data-provider="getdata" finished-at="2019-04-27T15:19:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightAndValidateTotal -->
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10429" started-at="2019-04-27T15:19:45Z" data-provider="getdata" finished-at="2019-04-27T15:19:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightAndValidateTotal -->
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="424" started-at="2019-04-27T15:19:56Z" data-provider="getdata" finished-at="2019-04-27T15:19:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightAndValidateTotal -->
+        <test-method status="PASS" signature="SelectFlightAndValidateTotal(int, int)[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="SelectFlightAndValidateTotal" duration-ms="10428" started-at="2019-04-27T15:19:56Z" data-provider="getdata" finished-at="2019-04-27T15:20:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightAndValidateTotal -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.mmt.TestCases.MMT_FlightResultTest@1d057a39]" name="TearDown" is-config="true" duration-ms="268" started-at="2019-04-27T15:20:06Z" finished-at="2019-04-27T15:20:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.mmt.TestCases.MMT_FlightResultTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
