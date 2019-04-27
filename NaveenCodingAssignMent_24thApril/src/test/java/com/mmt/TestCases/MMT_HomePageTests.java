@@ -10,6 +10,10 @@ import org.testng.annotations.BeforeClass;
 import com.mmt.BaseClass.BaseClass;
 import com.mmt.Pages.MMT_HomePage;
 
+/*Covering test Case
+1.Validating title of Page after login
+2.Entering Search details 
+*/
 public class MMT_HomePageTests extends BaseClass {
 
 	private MMT_HomePage home;

@@ -1,18 +1,17 @@
 package com.mmt.Util;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.mmt.BaseClass.BaseClass;
 
 public class Listners extends BaseClass implements ITestListener{
 	
-//	private static ExtentReports extent = ExtentReportGenerator.createInstance();
-//    private static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
+
     private ExtentTest ParentextentTest;
     private ExtentTest ChildExtentTest;
 
@@ -20,7 +19,12 @@ public class Listners extends BaseClass implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 		    System.out.println((result.getMethod().getMethodName() + " started!"));
+	        //ChildExtentTest = ParentextentTest.createNode(result.getName());
+		    if(Arrays.asList(result.getParameters()).size()==0)
 	        ChildExtentTest = ParentextentTest.createNode(result.getName());
+		    else {
+		    	ChildExtentTest = ParentextentTest.createNode(result.getName()+Arrays.asList(result.getParameters()).toString());
+		    }
 	        test.set(ChildExtentTest);
 	}
 
@@ -82,6 +86,8 @@ public class Listners extends BaseClass implements ITestListener{
         extent.flush();
 		
 	}
+	
+	 
 	
 	
 }

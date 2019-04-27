@@ -84,7 +84,7 @@ public class MMT_FlightResult extends BaseClass {
 	}
 
 	public void numberOfDepartureFlight() {
-
+        
 		System.out.println("Total number of departure flights " + DepartureFlightList.size());
 		Reporter.log("Total number of departure flights " + DepartureFlightList.size());
 		test.get().info("Total number of departure flights " + DepartureFlightList.size());

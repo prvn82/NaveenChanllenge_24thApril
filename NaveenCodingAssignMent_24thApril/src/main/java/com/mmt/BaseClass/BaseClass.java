@@ -39,7 +39,8 @@ public class BaseClass {
 	public static WebDriver driver;
 	
 	public static ExtentReports extent = ExtentReportGenerator.createInstance();
-    public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
+    public static ThreadLocal<ExtentTest> test1 = new ThreadLocal<ExtentTest>();
+    public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 	
 	public static void fileSetup() {
 		try {

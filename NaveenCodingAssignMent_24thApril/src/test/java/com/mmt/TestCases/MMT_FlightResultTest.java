@@ -11,6 +11,13 @@ import com.mmt.Pages.MMT_HomePage;
 import com.mmt.Util.MMT_Util;
 import com.mmt.dataStorage.DataProviderClass;
 
+
+/*Test Senario Covered:
+	1. Validating number of departure and arrival flight without filter
+	2. Validating number of departure and arrival flight with One-stop filter
+	3. Validating number of departure and arrival flights with Non-stop filter
+	4. Selecting random departure flight and arrival flights and validate total Fare is correct at footer. */
+	
 public class MMT_FlightResultTest extends BaseClass {
 	
 
@@ -38,7 +45,7 @@ public class MMT_FlightResultTest extends BaseClass {
 	
 	
 	@Test(priority=2)
-	public void ValidateNumberofFlightWith_NonStop() {
+	public void ValidateNumberOfFlightWith_NonStop() {
 		System.out.println("***********No of flights after One STOP filter applied****************");
 		Reporter.log("***********No of flights after One STOP filter applied***************");
 		MMT_Util.ScrollUPComplete();
@@ -50,7 +57,7 @@ public class MMT_FlightResultTest extends BaseClass {
 	}
 	
 	@Test(priority=3)
-	public void ValidateNumberofFlightWith_OneStop() {
+	public void ValidateNumberOfFlightWith_OneStop() {
 		System.out.println("*********** No of flights after One STOP filter applied***************");
 		Reporter.log("***********No of flights after One STOP filter applied****************");
 		MMT_Util.ScrollUPComplete();
@@ -69,17 +76,19 @@ public class MMT_FlightResultTest extends BaseClass {
 		
 		results.SelectDepartureFlight(depaInx);
 		results.SelectDArrivalFlight(ArrivalIdx);
+		//Console printing
 		System.out.println("Selected Arrival flight Name: "+results.getArrival_Flightname());
 		System.out.println("Selected Arrival flight Price: "+results.getArrival_FlightPrice());
 		System.out.println("Selected Departure flight Name: "+results.getDepart_Flightname());
 		System.out.println("Selected departure flight Price: "+results.getDepart_FlightPrice());
 		
+		//TestNg Emailable printing
 		Reporter.log("Selected Arrival flight Name: "+results.getArrival_Flightname());
 		Reporter.log("Selected Arrival flight Name: "+results.getArrival_FlightPrice());
 		Reporter.log("Selected Arrival flight Name: "+results.getDepart_Flightname());
 		Reporter.log("Selected Arrival flight Name: "+results.getDepart_FlightPrice());
 		
-		
+		//Extent Reporting printing
 		test.get().info("Selected Arrival flight Name: "+results.getArrival_Flightname());
 		test.get().info("Selected Arrival flight Name: "+results.getArrival_FlightPrice());
 		test.get().info("Selected Arrival flight Name: "+results.getDepart_Flightname());
@@ -93,14 +102,14 @@ public class MMT_FlightResultTest extends BaseClass {
 	}
 	
 	
-	public void Validate_SelectedFlightDetails() {
+	private void Validate_SelectedFlightDetails() {
 		Assert.assertTrue(results.ValidateSelectet_DepartureFlightDetails());
 		Assert.assertTrue(results.ValidateSelectet_DepartureFlightDetails());
 
 	}
 
 	
-	public void ValidateTotalFare() {
+	private void ValidateTotalFare() {
 		Assert.assertTrue(results.validate_TotalFare());
 	}
 }
