@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">13 methods,  1 skipped,  12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(300, 4)">SelectFlightAndValidateTotal(300, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,12 +130,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(1, 9)">SelectFlightAndValidateTotal(1, 9)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(4, 4)">SelectFlightAndValidateTotal(4, 4)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(5, 6)">SelectFlightAndValidateTotal(5, 6)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -131,17 +140,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(5, 3)">SelectFlightAndValidateTotal(5, 3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(8, 3)">SelectFlightAndValidateTotal(8, 3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(5, 6)">SelectFlightAndValidateTotal(5, 6)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(5, 3)">SelectFlightAndValidateTotal(5, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mmt.TestCases.MMT_FlightResultTest" hash-for-method="SelectFlightAndValidateTotal(1, 9)">SelectFlightAndValidateTotal(1, 9)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -176,6 +185,76 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.mmt.TestCases.MMT_FlightResultTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectFlightAndValidateTotal(300, 4)">
+                  </a> <!-- SelectFlightAndValidateTotal(300, 4) -->
+                  <span class="method-name">SelectFlightAndValidateTotal</span>
+                  <span class="parameters">(300, 4)</span>
+                  <div class="stack-trace"><b>"org.testng.SkipException: Given 300 Index number is more than number of departure flight listed or Negative value
+	at com.mmt.Pages.MMT_FlightResult.SelectDepartureFlight(MMT_FlightResult.java:140)
+	at com.mmt.TestCases.MMT_FlightResultTest.SelectFlightAndValidateTotal(MMT_FlightResultTest.java:77)
+... Removed 24 stack frames<br/> org.testng.SkipException: Given 300 Index number is more than number of departure flight listed or Negative value
+	at com.mmt.Pages.MMT_FlightResult.SelectDepartureFlight(MMT_FlightResult.java:140)
+	at com.mmt.TestCases.MMT_FlightResultTest.SelectFlightAndValidateTotal(MMT_FlightResultTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+"</b><br>com.mmt.Pages.MMT_FlightResult.SelectDepartureFlight(MMT_FlightResult.java:140)<br>com.mmt.TestCases.MMT_FlightResultTest.SelectFlightAndValidateTotal(MMT_FlightResultTest.java:77)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mmt.TestCases.MMT_HomePageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchFlight">
+                  </a> <!-- SearchFlight -->
+                  <span class="method-name">SearchFlight</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateHomePage">
+                  </a> <!-- ValidateHomePage -->
+                  <span class="method-name">ValidateHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -200,18 +279,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="SelectFlightAndValidateTotal(1, 9)">
-                  </a> <!-- SelectFlightAndValidateTotal(1, 9) -->
+                  <a name="SelectFlightAndValidateTotal(5, 6)">
+                  </a> <!-- SelectFlightAndValidateTotal(5, 6) -->
                   <span class="method-name">SelectFlightAndValidateTotal</span>
-                  <span class="parameters">(1, 9)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SelectFlightAndValidateTotal(4, 4)">
-                  </a> <!-- SelectFlightAndValidateTotal(4, 4) -->
-                  <span class="method-name">SelectFlightAndValidateTotal</span>
-                  <span class="parameters">(4, 4)</span>
+                  <span class="parameters">(5, 6)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -224,14 +295,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="SelectFlightAndValidateTotal(5, 3)">
-                  </a> <!-- SelectFlightAndValidateTotal(5, 3) -->
-                  <span class="method-name">SelectFlightAndValidateTotal</span>
-                  <span class="parameters">(5, 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="SelectFlightAndValidateTotal(8, 3)">
                   </a> <!-- SelectFlightAndValidateTotal(8, 3) -->
                   <span class="method-name">SelectFlightAndValidateTotal</span>
@@ -240,10 +303,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="SelectFlightAndValidateTotal(5, 6)">
-                  </a> <!-- SelectFlightAndValidateTotal(5, 6) -->
+                  <a name="SelectFlightAndValidateTotal(5, 3)">
+                  </a> <!-- SelectFlightAndValidateTotal(5, 3) -->
                   <span class="method-name">SelectFlightAndValidateTotal</span>
-                  <span class="parameters">(5, 6)</span>
+                  <span class="parameters">(5, 3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectFlightAndValidateTotal(1, 9)">
+                  </a> <!-- SelectFlightAndValidateTotal(1, 9) -->
+                  <span class="method-name">SelectFlightAndValidateTotal</span>
+                  <span class="parameters">(1, 9)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -265,28 +336,6 @@
                   <a name="ValidateNumberOfFlightWith_OneStop">
                   </a> <!-- ValidateNumberOfFlightWith_OneStop -->
                   <span class="method-name">ValidateNumberOfFlightWith_OneStop</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.mmt.TestCases.MMT_HomePageTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchFlight">
-                  </a> <!-- SearchFlight -->
-                  <span class="method-name">SearchFlight</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ValidateHomePage">
-                  </a> <!-- ValidateHomePage -->
-                  <span class="method-name">ValidateHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -351,60 +400,60 @@ data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ValidateNumberOfFlightWith_OneStop')
 data.setCell(0, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(0, 3, 52319);
+data.setCell(0, 3, 51454);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'ValidateNumberOfFlightWith_NonStop')
 data.setCell(1, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(1, 3, 20654);
+data.setCell(1, 3, 20686);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SearchFlight')
-data.setCell(2, 2, 'com.mmt.TestCases.MMT_HomePageTests')
-data.setCell(2, 3, 16203);
+data.setCell(2, 1, 'ValidateNumberOfFlighstWithoutFilters')
+data.setCell(2, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
+data.setCell(2, 3, 11279);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'SelectFlightAndValidateTotal')
 data.setCell(3, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(3, 3, 10579);
+data.setCell(3, 3, 10526);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ValidateNumberOfFlighstWithoutFilters')
+data.setCell(4, 1, 'SelectFlightAndValidateTotal')
 data.setCell(4, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(4, 3, 10551);
+data.setCell(4, 3, 10485);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'SelectFlightAndValidateTotal')
 data.setCell(5, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(5, 3, 10545);
+data.setCell(5, 3, 10471);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'SelectFlightAndValidateTotal')
 data.setCell(6, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(6, 3, 10519);
+data.setCell(6, 3, 10466);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'SelectFlightAndValidateTotal')
 data.setCell(7, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(7, 3, 10490);
+data.setCell(7, 3, 10455);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'SelectFlightAndValidateTotal')
 data.setCell(8, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(8, 3, 10481);
+data.setCell(8, 3, 10420);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'SelectFlightAndValidateTotal')
-data.setCell(9, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(9, 3, 10467);
+data.setCell(9, 1, 'SearchFlight')
+data.setCell(9, 2, 'com.mmt.TestCases.MMT_HomePageTests')
+data.setCell(9, 3, 9448);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'SelectFlightAndValidateTotal')
 data.setCell(10, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(10, 3, 10460);
+data.setCell(10, 3, 393);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'SelectFlightAndValidateTotal')
 data.setCell(11, 2, 'com.mmt.TestCases.MMT_FlightResultTest')
-data.setCell(11, 3, 10445);
+data.setCell(11, 3, 28);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'ValidateHomePage')
 data.setCell(12, 2, 'com.mmt.TestCases.MMT_HomePageTests')
-data.setCell(12, 3, 26);
+data.setCell(12, 3, 21);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -420,10 +469,22 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Clicked on Flight number 10</span>
                 <span class="reporter-method-output">Clicked on Flight number 1</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Spicejet |SG - 8720</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,394</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2306</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 18,300</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: AirAsia |I5 - 2878</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,820</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Vistara |UK - 819</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 19,970</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ValidateNumberOfFlightWith_NonStop</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">***********No of flights after NonStop filter applied***************</span>
+                <span class="reporter-method-output">Scrolling up to view element from start..</span>
+                <span class="reporter-method-output">Clearing applied filters..</span>
+                <span class="reporter-method-output">Clicked on filter non stops</span>
+                <span class="reporter-method-output">Scrolling down to load complete Page content..</span>
+                <span class="reporter-method-output">Total number of departure flights 10</span>
+                <span class="reporter-method-output">Total number of departure flights 35</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -431,50 +492,70 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Clicked on Flight number 2</span>
                 <span class="reporter-method-output">Clicked on Flight number 3</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: AirAsia |I5 - 2878</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,820</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 671IndiGo |6E - 221</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 12,783</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2625</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,841</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 197IndiGo |6E - 565</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 14,214</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">SelectFlightAndValidateTotal(1, 9)</span>
+              <span class="reporter-method-name">ValidateNumberOfFlightWith_OneStop</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Flight number 1</span>
-                <span class="reporter-method-output">Clicked on Flight number 9</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2367</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 7,102</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Go Air |G8 - 640Go Air |G8 - 325</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 11,969</span>
+                <span class="reporter-method-output">***********No of flights after One STOP filter applied****************</span>
+                <span class="reporter-method-output">Scrolling up to view element from start..</span>
+                <span class="reporter-method-output">Clearing applied filters..</span>
+                <span class="reporter-method-output">Clicked on filter one stop</span>
+                <span class="reporter-method-output">Scrolling down to load complete Page content..</span>
+                <span class="reporter-method-output">Total number of departure flights 7</span>
+                <span class="reporter-method-output">Total number of departure flights 33</span>
+                <span class="reporter-method-output">Scrolling up to view element from start..</span>
+                <span class="reporter-method-output">Clearing applied filters..</span>
+                <span class="reporter-method-output">Scrolling down to load complete Page content..</span>
+                <span class="reporter-method-output">Scrolling up to view element from start..</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">SelectFlightAndValidateTotal(4, 4)</span>
+              <span class="reporter-method-name">SelectFlightAndValidateTotal(5, 6)</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked on Flight number 5</span>
+                <span class="reporter-method-output">Clicked on Flight number 6</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2289</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,841</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Go Air |G8 - 171Go Air |G8 - 284</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 15,336</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SelectFlightAndValidateTotal(3, 4)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked on Flight number 3</span>
                 <span class="reporter-method-output">Clicked on Flight number 4</span>
-                <span class="reporter-method-output">Clicked on Flight number 4</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: AirAsia |I5 - 722</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,820</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Air India |AI - 512Air India |AI - 588</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2135</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,841</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Air India |AI - 48Air India |AI - 588</span>
                 <span class="reporter-method-output">Selected Arrival flight Name: Rs 14,541</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ValidateHomePage</span>
+              <span class="reporter-method-name">SelectFlightAndValidateTotal(8, 3)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">validating Page title...</span>
+                <span class="reporter-method-output">Clicked on Flight number 8</span>
+                <span class="reporter-method-output">Clicked on Flight number 3</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2625</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,841</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: AirAsia |I5 - 721</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 19,448</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ValidateNumberOfFlightWith_NonStop</span>
+              <span class="reporter-method-name">SelectFlightAndValidateTotal(5, 3)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">***********No of flights after One STOP filter applied***************</span>
-                <span class="reporter-method-output">Scrolling up to view element from start..</span>
-                <span class="reporter-method-output">Clearing applied filters..</span>
-                <span class="reporter-method-output">Clicked on filter non stops</span>
-                <span class="reporter-method-output">Scrolling down to load complete Page content..</span>
-                <span class="reporter-method-output">Total number of departure flights 12</span>
-                <span class="reporter-method-output">Total number of departure flights 35</span>
+                <span class="reporter-method-output">Clicked on Flight number 5</span>
+                <span class="reporter-method-output">Clicked on Flight number 3</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2625</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,841</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Go Air |G8 - 171Go Air |G8 - 284</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 15,336</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -493,72 +574,29 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">SelectFlightAndValidateTotal(3, 4)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Flight number 3</span>
-                <span class="reporter-method-output">Clicked on Flight number 4</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: AirAsia |I5 - 722</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,820</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 129IndiGo |6E - 949</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 13,580</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">SelectFlightAndValidateTotal(5, 3)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Flight number 5</span>
-                <span class="reporter-method-output">Clicked on Flight number 3</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: AirAsia |I5 - 2878</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,820</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Vistara |UK - 955Vistara |UK - 857</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 14,653</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">SelectFlightAndValidateTotal(8, 3)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Flight number 8</span>
-                <span class="reporter-method-output">Clicked on Flight number 3</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: AirAsia |I5 - 2878</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,820</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Go Air |G8 - 188Go Air |G8 - 806</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 16,003</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">SelectFlightAndValidateTotal(5, 6)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Flight number 5</span>
-                <span class="reporter-method-output">Clicked on Flight number 6</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2135</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 6,841</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Vistara |UK - 955Vistara |UK - 857</span>
-                <span class="reporter-method-output">Selected Arrival flight Name: Rs 14,653</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">ValidateNumberOfFlighstWithoutFilters</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">*********** No of flights after without any filters***************</span>
                 <span class="reporter-method-output">Scrolling down to load complete Page content..</span>
-                <span class="reporter-method-output">Total number of departure flights 25</span>
-                <span class="reporter-method-output">Total number of departure flights 70</span>
+                <span class="reporter-method-output">Total number of departure flights 17</span>
+                <span class="reporter-method-output">Total number of departure flights 71</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ValidateNumberOfFlightWith_OneStop</span>
+              <span class="reporter-method-name">SelectFlightAndValidateTotal(1, 9)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">***********No of flights after One STOP filter applied****************</span>
-                <span class="reporter-method-output">Scrolling up to view element from start..</span>
-                <span class="reporter-method-output">Clearing applied filters..</span>
-                <span class="reporter-method-output">Clicked on filter one stop</span>
-                <span class="reporter-method-output">Scrolling down to load complete Page content..</span>
-                <span class="reporter-method-output">Total number of departure flights 12</span>
-                <span class="reporter-method-output">Total number of departure flights 31</span>
-                <span class="reporter-method-output">Scrolling up to view element from start..</span>
-                <span class="reporter-method-output">Clearing applied filters..</span>
-                <span class="reporter-method-output">Scrolling down to load complete Page content..</span>
-                <span class="reporter-method-output">Scrolling up to view element from start..</span>
+                <span class="reporter-method-output">Clicked on Flight number 1</span>
+                <span class="reporter-method-output">Clicked on Flight number 9</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: IndiGo |6E - 2367</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 7,102</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Go Air |G8 - 640Go Air |G8 - 325</span>
+                <span class="reporter-method-output">Selected Arrival flight Name: Rs 13,374</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ValidateHomePage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">validating Page title...</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -569,7 +607,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.mmt.TestCases.MMT_HomePageTests</span>
+              <span class="ignored-class-name">com.mmt.TestCases.MMT_FlightResultTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDown</span>
                 <br/>
@@ -585,80 +623,80 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.mmt.TestCases.MMT_FlightResultTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.mmt.TestCases.MMT_HomePageTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.mmt.TestCases.MMT_HomePageTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">7264 ms</span>
+                <span class="method-start">9897 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ValidateHomePage</span>
-                <span class="method-start">7295 ms</span>
+                <span class="method-start">9927 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SearchFlight</span>
-                <span class="method-start">7326 ms</span>
+                <span class="method-start">9950 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mmt.TestCases.MMT_FlightResultTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">23530 ms</span>
+                <span class="method-start">19400 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ValidateNumberOfFlighstWithoutFilters</span>
-                <span class="method-start">27219 ms</span>
+                <span class="method-start">23002 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ValidateNumberOfFlightWith_NonStop</span>
-                <span class="method-start">37771 ms</span>
+                <span class="method-start">34282 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ValidateNumberOfFlightWith_OneStop</span>
-                <span class="method-start">58426 ms</span>
+                <span class="method-start">54970 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SelectFlightAndValidateTotal(10, 1)</span>
-                <span class="method-start">110749 ms</span>
+                <span class="method-start">106427 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SelectFlightAndValidateTotal(3, 4)</span>
-                <span class="method-start">121329 ms</span>
+                <span class="method-start">116953 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SelectFlightAndValidateTotal(5, 6)</span>
-                <span class="method-start">131820 ms</span>
+                <span class="method-start">127374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SelectFlightAndValidateTotal(8, 3)</span>
-                <span class="method-start">142302 ms</span>
+                <span class="method-start">137829 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SelectFlightAndValidateTotal(1, 9)</span>
-                <span class="method-start">152822 ms</span>
+                <span class="method-start">148296 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SelectFlightAndValidateTotal(5, 3)</span>
-                <span class="method-start">163268 ms</span>
+                <span class="method-start">158782 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SelectFlightAndValidateTotal(2, 3)</span>
-                <span class="method-start">173813 ms</span>
+                <span class="method-start">169254 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">SelectFlightAndValidateTotal(4, 4)</span>
-                <span class="method-start">184281 ms</span>
+                <span class="method-name">SelectFlightAndValidateTotal(300, 4)</span>
+                <span class="method-start">169648 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mmt.TestCases.MMT_HomePageTests</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">194742 ms</span>
+                <span class="method-start">169681 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

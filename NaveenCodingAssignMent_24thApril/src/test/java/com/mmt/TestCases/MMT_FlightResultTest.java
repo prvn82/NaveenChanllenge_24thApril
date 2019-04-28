@@ -31,7 +31,7 @@ public class MMT_FlightResultTest extends BaseClass {
 		results = home.ClickSearchButton();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,dependsOnMethods="com.mmt.TestCases.MMT_HomePageTests.SearchFlight")
 	public void ValidateNumberOfFlighstWithoutFilters() {
 		System.out.println("*********** No of flights after without any filters***************");
 		Reporter.log("*********** No of flights after without any filters***************");
@@ -44,10 +44,10 @@ public class MMT_FlightResultTest extends BaseClass {
 	}
 	
 	
-	@Test(priority=2)
+	@Test(priority=2,dependsOnMethods="com.mmt.TestCases.MMT_HomePageTests.SearchFlight")
 	public void ValidateNumberOfFlightWith_NonStop() {
-		System.out.println("***********No of flights after One STOP filter applied****************");
-		Reporter.log("***********No of flights after One STOP filter applied***************");
+		System.out.println("***********No of flights after NonStop filter applied****************");
+		Reporter.log("***********No of flights after NonStop filter applied***************");
 		MMT_Util.ScrollUPComplete();
 		results.StopsFlights("non stops");
 		MMT_Util.ScrollDownComplete();
@@ -56,7 +56,7 @@ public class MMT_FlightResultTest extends BaseClass {
 		
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3,dependsOnMethods="com.mmt.TestCases.MMT_HomePageTests.SearchFlight")
 	public void ValidateNumberOfFlightWith_OneStop() {
 		System.out.println("*********** No of flights after One STOP filter applied***************");
 		Reporter.log("***********No of flights after One STOP filter applied****************");
@@ -71,7 +71,7 @@ public class MMT_FlightResultTest extends BaseClass {
 		MMT_Util.ScrollUPComplete();
 	}
 	
-	@Test(priority=4,dataProvider="getdata",dataProviderClass=DataProviderClass.class)
+	@Test(priority=4,dependsOnMethods="ValidateNumberOfFlighstWithoutFilters",dataProvider="getdata",dataProviderClass=DataProviderClass.class)
 	public void SelectFlightAndValidateTotal(int depaInx, int ArrivalIdx) {
 		
 		results.SelectDepartureFlight(depaInx);

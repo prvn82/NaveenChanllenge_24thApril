@@ -61,8 +61,14 @@ public class Listners extends BaseClass implements ITestListener{
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
-        test.get().skip(result.getThrowable());
-	}
+		
+        
+        if(result.getThrowable()==null) {
+	            test.get().skip("Dependant tests failed");
+	      }else {
+	    	  test.get().skip(result.getThrowable());
+	    }
+}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {

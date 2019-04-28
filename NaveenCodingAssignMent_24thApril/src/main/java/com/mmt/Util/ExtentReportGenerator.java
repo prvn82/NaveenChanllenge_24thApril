@@ -2,6 +2,8 @@ package com.mmt.Util;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
 
 import org.openqa.selenium.Platform;
 
@@ -13,9 +15,12 @@ import com.mmt.BaseClass.BaseClass;
 
 public class ExtentReportGenerator extends BaseClass {
 	
+	static Calendar instance = Calendar.getInstance();
+	static Date time = instance.getTime();
+	
 	private static ExtentReports extent;
     private static Platform platform;
-    private static String reportFileName = "ExtentReports-Version3-Test-Automaton-Report.html";
+    private static String reportFileName = "ExtentReports-Version3-Test-Automaton-Report"+time+".html";
     private static String macPath = System.getProperty("user.dir")+ "/Reports";
     private static String windowsPath = System.getProperty("user.dir")+ "\\Reports";
     private static String macReportFileLoc = macPath + "/" + reportFileName;
@@ -33,6 +38,8 @@ public class ExtentReportGenerator extends BaseClass {
     	platform = getCurrentPlatform();
         String fileName = getReportFileLocation(platform);
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
+        htmlReporter.setAppendExisting(false);
+        //htmlReporter.
         htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTheme(Theme.STANDARD);
@@ -78,6 +85,7 @@ public class ExtentReportGenerator extends BaseClass {
  
     //Create the report path if it does not exist
     private static void createReportPath (String path) {
+    	
         File testDirectory = new File(path);
         if (!testDirectory.exists()) {
             if (testDirectory.mkdir()) {

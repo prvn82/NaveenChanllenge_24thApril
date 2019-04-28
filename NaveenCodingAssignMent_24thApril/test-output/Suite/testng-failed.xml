@@ -6,21 +6,21 @@
   </listeners>
   <test name="NaveenAutomation_24thApril(failed)">
     <classes>
-      <class name="com.mmt.TestCases.MMT_FlightResultTest">
-        <methods>
-          <include name="ValidateNumberOfFlightWith_OneStop"/>
-          <include name="TearDown"/>
-          <include name="Setup"/>
-          <include name="init"/>
-          <include name="SelectFlightAndValidateTotal" invocation-numbers="0 1 2 3 4 5 6 7"/>
-          <include name="ValidateNumberOfFlightWith_NonStop"/>
-        </methods>
-      </class> <!-- com.mmt.TestCases.MMT_FlightResultTest -->
       <class name="com.mmt.TestCases.MMT_HomePageTests">
         <methods>
           <include name="init"/>
+          <include name="TearDown"/>
+          <include name="SearchFlight"/>
+          <include name="Setup"/>
         </methods>
       </class> <!-- com.mmt.TestCases.MMT_HomePageTests -->
+      <class name="com.mmt.TestCases.MMT_FlightResultTest">
+        <methods>
+          <include name="ValidateNumberOfFlighstWithoutFilters"/>
+          <include name="init"/>
+          <include name="SelectFlightAndValidateTotal" invocation-numbers="7"/>
+        </methods>
+      </class> <!-- com.mmt.TestCases.MMT_FlightResultTest -->
     </classes>
   </test> <!-- NaveenAutomation_24thApril(failed) -->
 </suite> <!-- Failed suite [Suite] -->
